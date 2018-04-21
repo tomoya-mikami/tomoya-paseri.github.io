@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="block_main">
+        <header class="block_header">
+            <div class="header_search">
+                <form action="">
+                    <button type="submit" value="action" class="tmp_serach_button">a</button>
+                    <input type="text" placeholder="探したい食材で検索" class="form_input_search">
+                </form>
+            </div>
+        </header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item no_active_tab_button">
+                <a class="nav-link block_height_100">お気に入りの店</a>
+            </li>
+            <li class="nav-item active_tab_button">
+                <a class="nav-link block_height_100">近くの店</a>
+            </li>
+        </ul>
+        <div id="content_field" class="block_main_list">
+            <div class="block_main_list_node">
+                <img src="./img/img_sample.jpg" alt="">
+                <table class="block_table">
+                    <tr><td class="block_list_shop_name">ショップ</td></tr>
+                    <tr><td class="block_list_shop_info">住所</td></tr>
+                    <tr><td class="block_list_shop_info">営業時間</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+    create_window_near_shop();
+    </script>
+</body>
+</html>
